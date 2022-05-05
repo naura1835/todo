@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Todo app</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Todo</h1>
+        <button class="theme"></button>
+      </header>
+      <aside class="add-todo">
+        <div class="check-icon"></div>
+        <input type="text" name="to-do" placeholder="Create a new todo..." />
+      </aside>
+      <main class="todo-list">
+        <div class="todo-list__items">
+          <!-- <div class="item">
+            <input type="checkbox" name="todo-item" id="item1" />
+            <label for="item1" class="label">Complete online javascript course</label>
+            <button class="delete-item" />
+          </div> -->
+        </div>
+        <div class="todo-list__overview">
+          <span class="left">5 items left</span>
+          <span class="info all active mobile">All</span>
+          <span class="info unfinished mobile">Active</span>
+          <span class="info finished mobile">Completed</span>
+
+          <span class="clear">Clear completed</span>
+        </div>
+      </main>
+      <div class="list-type">
+        <div>
+          <span class="info active all">All</span>
+          <span class="info unfinished">Active</span>
+          <span class="info finished">Completed</span>
+        </div>
+      </div>
+      <small class="reorder">Drag and drop to reorder list</small>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="wwww.khadijagwarzo.com">Khadija Gwarzo</a>.
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
