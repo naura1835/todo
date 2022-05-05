@@ -74,7 +74,7 @@ function listElement(item, index) {
     index + 1
   } />
     <label for="item${index + 1}" class="label">${item.content}</label>
-    <button class="delete-item" />`;
+    <button arial-label="theme button" class="delete-item"> </button>`;
   list.appendChild(div);
 }
 
