@@ -1,3 +1,4 @@
+const form = document.querySelector(".add-todo");
 const create = document.querySelector('[name = "to-do"]');
 const container = document.querySelector(".container");
 const list = document.querySelector(".todo-list__items");
@@ -17,6 +18,9 @@ document.addEventListener("DOMContentLoaded", allTodos);
 finished.forEach((element) =>
   element.addEventListener("click", completedTodos)
 );
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+});
 
 container.addEventListener("click", (e) => {
   if (e.target.className.includes("info")) {
@@ -74,7 +78,7 @@ function listElement(item, index) {
     index + 1
   } />
     <label for="item${index + 1}" class="label">${item.content}</label>
-    <button arial-label="theme button" class="delete-item"> </button>`;
+    <button arial-label="theme button" class="delete-item"></button>`;
   list.appendChild(div);
 }
 
@@ -171,6 +175,7 @@ function addTodo(e) {
     });
     localStorage.setItem("todos", JSON.stringify(lists));
     allTodos();
+    e.target.value = "";
   }
 }
 
