@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://naura1835.github.io/todo/)
+- Solution URL: [Repo](https://github.com/naura1835/todo)
+- Live Site URL: [Todo website](https://naura1835.github.io/todo/)
 
 ## My process
 
